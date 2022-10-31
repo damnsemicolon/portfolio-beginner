@@ -82,7 +82,7 @@ h3 {
 .right-about {
     border-left: 3px solid;
     border-left-color: var(--primary-color);
-    padding: 0 50px 0 20px;
+    padding: 0 20% 0 20px;
     text-align:justify
 }
 
@@ -94,7 +94,7 @@ h3 {
     grid-row-gap: 10px;
     border-left: 3px solid;
     border-left-color: var(--primary-color);
-    padding: 0 50px 0 20px;
+    padding: 0 20% 0 20px;
 }
 
 .projects {
@@ -157,7 +157,7 @@ h3 {
 .right-contact {
     border-left: 3px solid;
     border-left-color: var(--primary-color);
-    padding: 0 50px 0 20px;
+    padding: 0 20% 0 20px;
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -172,6 +172,88 @@ h3 {
     height:2em;
 }
 
-@media screen {
+/* For smaller screen - tablets & smartphones */
+@media screen and (max-width:768px) {
+    .nav {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .logo {
+        width:100%;
+        text-align:center;
+    }
+
+    .navbar {
+        width:100%;
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    .hero-banner h2 {
+        right:-25%;
+        background-color: var(--secondary-color);
+    }
+
+    #about, #work, #contact {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+    h3 {
+        text-align: left;
+        padding-left:10%;
+    }
+
+    .right-about {
+        border-left:none;
+        border-top:3px solid;
+        border-top-color: var(--primary-color);
+        padding:20px 10% 0px 0px;
+        margin: 0px 10% 0px 10%;
+    }
+    .right-work {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 120px);
+        border-left:none;
+        border-top:3px solid;
+        border-top-color: var(--primary-color);
+        padding:20px 10% 0px 0px;
+        margin: 0px 10% 0px 10%;
+    }
+
+    #surf {
+        grid-area: 1 / 1 / 2 / 2;        
+    }
     
-}
+    #led {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    
+    #calculator {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    
+    #pastel {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    
+    #run {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .right-contact {
+        display:grid;
+        grid-template-columns: 1fr;
+        border-left:none;
+        border-top:3px solid;
+        border-top-color: var(--primary-color);
+        padding:20px 10% 0px 0px;
+        margin: 0px 10% 0px 10%;
+    }
+
+    .right-contact a {
+        border:none;
+        text-decoration: underline 4px;
+    }
