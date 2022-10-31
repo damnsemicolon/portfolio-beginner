@@ -47,7 +47,7 @@ body {
     text-decoration:none;
     color:var(--secondary-color);
     margin-right:30px;
-    border-bottom: 2px solid;
+    border-bottom: 4px solid;
     border-color:var(--secondary-color);
 }
 
@@ -77,9 +77,6 @@ h3 {
     display:grid;
     grid-template-columns: 25% 75%;
     margin-bottom:20px;
-    /* grid-template-areas:
-    'left right'
-    'left right'; */
 }
 
 .right-about {
@@ -103,14 +100,24 @@ h3 {
 .projects {
     border: 3px solid;
     border-color: var(--secondary-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    filter: brightness(50%)
+}
+
+.projects:hover {
+    transition: 0.5s;
+    filter:brightness(100%);
+    cursor:pointer;
 }
 
 .text {
-    display:block;
     background:var(--secondary-color);
     position: relative;
     top:50%;
- 
+    width:fit-content;
+    padding-right:10px;
 }
 
 .text h4 {
@@ -123,40 +130,47 @@ h3 {
 
 #surf {
     grid-area: 1 / 1 / 2 / 3;
-    background-color: red;
     background-image: url("../images/02-portfolio-4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 #led {
     grid-area: 2 / 1 / 3 / 2;
-    background-color: red;
     background-image: url("../images/02-portfolio-1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #calculator {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: red;
     background-image: url("../images/02-portfolio-2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #pastel {
     grid-area: 3 / 1 / 4 / 2;
-    background-color: red;
     background-image: url("../images/02-portfolio-3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 #run {
     grid-area: 3 / 2 / 4 / 3;
-    background-color: red;
     background-image: url("../images/02-run-buddy.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+.right-contact {
+    border-left: 3px solid;
+    border-left-color: var(--primary-color);
+    padding: 0 50px 0 20px;
+    display:flex;
+    justify-content:space-around;
+}
+
+.right-contact a {
+    text-decoration:none;
+    color:var(--primary-color);
+    font-weight:bold;
+    border-bottom: 4px solid;
+    border-color:var(--primary-color);
+    height:2em;
+}
+
+@media screen {
+    
 }
