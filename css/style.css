@@ -59,6 +59,7 @@ body {
     object-fit:cover;
     filter: sepia(60%) saturate(250%) brightness(60%) hue-rotate(160deg);
 }
+
 .hero-banner h2 {
     display:inline;
     padding: 10px;
@@ -66,6 +67,19 @@ body {
     bottom:70px;
     right:-60%;
     background-color: var(--secondary-color);
+}
+
+.avatar {
+    display:block;
+    width:150px;
+    top:35px;
+    left:-50px;
+    position: absolute;
+    margin: 90px 0px 0px 130px;
+    border-radius: 100px;
+    border: 3px solid;
+    border-color:var(--secondary-color);
+    z-index: 999;
 }
 
 /* Body */
@@ -282,4 +296,3 @@ footer h5 {
         border:none;
         text-decoration: underline 4px;
     }
-
