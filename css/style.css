@@ -13,6 +13,7 @@
 body {
     padding: 0;
     line-height: 1.5;
+    background-color: #EDEEF7;
 }
 
 /* Styling for header */
@@ -88,8 +89,8 @@ h3 {
     padding: 0 20% 0 20px;
     text-align:justify
 }
-/* Works & Projects */
 
+/* Works & Projects */
 .right-work {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -101,13 +102,18 @@ h3 {
     padding: 0 20% 0 20px;
 }
 
+.right-work a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
 .projects {
     border: 3px solid;
     border-color: var(--secondary-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
-    filter: brightness(50%)
+    filter: brightness(70%)
 }
 
 .projects:hover {
@@ -175,6 +181,20 @@ h3 {
     border-bottom: 4px solid;
     border-color:var(--primary-color);
     height:2em;
+}
+
+/* Footer */
+
+footer {
+    padding: 10px;
+    background-color: var(--primary-color);
+    text-align: center;
+    margin-top: 60px;
+}
+  
+footer h5 {
+    font-size: 1em;
+    color: var(--secondary-color);
 }
 
 /* For smaller screen - tablets & smartphones */
@@ -262,3 +282,4 @@ h3 {
         border:none;
         text-decoration: underline 4px;
     }
+
