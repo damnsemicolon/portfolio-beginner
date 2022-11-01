@@ -19,10 +19,10 @@ N/A
 Portfolio page:
 https://damnsemicolon.github.io/portfolio-beginner/
 
-For viewports larger than 768px:
+For viewports larger than 768px:<br>
 ![screenshots](images/viewport%20over%20768px.png)
 
-For viewports smaller than 768px:
+For viewports smaller than 768px:<br>
 ![screenshots](images/viewport%20under%20768px.png)
 
 ## Credits
