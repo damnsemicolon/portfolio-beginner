@@ -70,15 +70,18 @@ body {
 }
 
 .avatar {
-    display:block;
+    display:absolute;
     width:150px;
-    top:35px;
-    left:-50px;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    top:130px;
     position: absolute;
-    margin: 90px 0px 0px 130px;
+    /* margin: 90px 0px 0px 130px; */
     border-radius: 100px;
     border: 3px solid;
-    border-color:var(--secondary-color);
+    border-color:var(--primary-color);
     z-index: 999;
 }
 
